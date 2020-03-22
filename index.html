@@ -21,27 +21,301 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
     />
     <title>Materialize Website</title>
+    <style>
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+          ),
+          url(img/header.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- _____________________________ navbar _____________________________ -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="" class="brand-logo">Oli-Materialize</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contect</a></li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small teal darken-4"
+                data-tooltip="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidenav teal darken-3 lighten-2" id="mobile-menu">
+            <li><a class="white-text" href="#photos">Photos</a></li>
+            <li><a class="white-text" href="#services">Services</a></li>
+            <li><a class="white-text" href="#contact">Contect</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- _____________________________ photo / grid _____________________________ -->
+    <section class="container section scrollspy" id="photos">
+      <div class="row">
+        <div class="col s12 l5">
+          <img
+            src="img/portrait.jpg"
+            alt="portrait"
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Portraits</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod eius
+            obcaecati doloremque molestias placeat, tempore laborum ipsum?
+            Atque, vero! Nam.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5 push-l7">
+          <img
+            src="img/city.jpg"
+            alt="portrait"
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 pull-l5">
+          <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod eius
+            obcaecati doloremque molestias placeat, tempore laborum ipsum?
+            Atque, vero! Nam.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5">
+          <img
+            src="img/nature.jpg"
+            alt="portrait"
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Nature</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod eius
+            obcaecati doloremque molestias placeat, tempore laborum ipsum?
+            Atque, vero! Nam.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- _____________________________ parallax _____________________________ -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="stars" class="responsive-img" />
+      </div>
+    </div>
 
     <!-- _____________________________ services / tabs _____________________________ -->
+    <section class="container section scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do ...</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, fugit
+            accusantium? Maxime deleniti reiciendis, dolore distinctio possimus
+            cum vero ratione alias quos? Beatae cupiditate
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam
+            cumque corporis eos culpa ea?
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4"
+                >Photogrphy</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">Photogrphy</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              doloremque accusamus, vero fuga neque minus dicta beatae fugit.
+              Cupiditate ad eligendi nostrum laboriosam enim cumque beatae ipsam
+              ullam error repellat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              corrupti ducimus distinctio possimus neque aspernatur.
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">Editing</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              doloremque accusamus, vero fuga neque minus dicta beatae fugit.
+              Cupiditate ad eligendi nostrum laboriosam enim cumque beatae ipsam
+              ullam error repellat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- _____________________________ parallax _____________________________ -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/stars.jpg" alt="stars" class="responsive-img" />
+      </div>
+    </div>
 
     <!-- _____________________________ contact form _____________________________ -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Geit in Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            iste facere in at earum similique ullam corrupti dignissimos nulla
+            minus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eaque
+            laudantium eius omnis facilis id?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eaque
+            laudantium eius omnis facilis id?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+            magnam, incidunt doloremque eaque tenetur et vitae iste.
+          </p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea class="materialize-textarea" id="message"></textarea>
+              <label for="message">Your message</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker" />
+              <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+              <p>Services required...</p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- _____________________________ footer _____________________________ -->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h5>About Me</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              explicabo quis incidunt. Quidem, sapiente itaque.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              natus.
+            </p>
+          </div>
+          <div class="col s12 l4 offset-l2">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#" class="grey-text text-lighten-3">facebook</a></li>
+              <li><a href="#" class="grey-text text-lighten-3">twitter</a></li>
+              <li><a href="#" class="grey-text text-lighten-3">linkedin</a></li>
+              <li>
+                <a href="#" class="grey-text text-lighten-3">instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">
+          &copy; 2020 Oliver Castro Teran
+        </div>
+      </div>
+    </footer>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
-      $(document).ready(function() {});
+      $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+          disableWeekends: true
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+      });
     </script>
   </body>
 </html>
