@@ -196,28 +196,66 @@
     </div>
 
     <!-- _____________________________ contact form _____________________________ -->
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-    </div>
+    <section class="section container" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Geit in Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            iste facere in at earum similique ullam corrupti dignissimos nulla
+            minus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eaque
+            laudantium eius omnis facilis id?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eaque
+            laudantium eius omnis facilis id?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+            magnam, incidunt doloremque eaque tenetur et vitae iste.
+          </p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea class="materialize-textarea" id="message"></textarea>
+              <label for="message">Your message</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker" />
+              <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+              <p>Services required...</p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- _____________________________ footer _____________________________ -->
 
@@ -230,6 +268,9 @@
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
+        $('.datepicker').datepicker({
+          disableWeekends: true
+        });
       });
     </script>
   </body>
