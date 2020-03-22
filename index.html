@@ -37,6 +37,13 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
       @media screen and (max-width: 670px) {
         header {
           min-height: 500px;
@@ -130,28 +137,56 @@
     </div>
 
     <!-- _____________________________ services / tabs _____________________________ -->
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti
-        quod quos culpa ducimus autem ea. Explicabo expedita ipsum inventore
-        temporibus obcaecati similique beatae cupiditate!
-      </p>
-    </div>
+    <section class="container section" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do ...</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, fugit
+            accusantium? Maxime deleniti reiciendis, dolore distinctio possimus
+            cum vero ratione alias quos? Beatae cupiditate
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam
+            cumque corporis eos culpa ea?
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4"
+                >Photogrphy</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">Photogrphy</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              doloremque accusamus, vero fuga neque minus dicta beatae fugit.
+              Cupiditate ad eligendi nostrum laboriosam enim cumque beatae ipsam
+              ullam error repellat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              corrupti ducimus distinctio possimus neque aspernatur.
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">Editing</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              doloremque accusamus, vero fuga neque minus dicta beatae fugit.
+              Cupiditate ad eligendi nostrum laboriosam enim cumque beatae ipsam
+              ullam error repellat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- _____________________________ parallax _____________________________ -->
     <div class="parallax-container">
@@ -194,6 +229,7 @@
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
+        $('.tabs').tabs();
       });
     </script>
   </body>
